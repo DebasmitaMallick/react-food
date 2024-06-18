@@ -8,7 +8,7 @@ const UserProgressContext = createContext({
   hideCheckout: () => {},
 });
 
-export const useUserProgressContext = () => useContext(UserProgressContext);
+const useUserProgressContext = () => useContext(UserProgressContext);
 
 export const UserProgressContextProvider = ({ children }) => {
   const [userProgress, setUserProgress] = useState("");
@@ -42,3 +42,5 @@ export const UserProgressContextProvider = ({ children }) => {
     </UserProgressContext.Provider>
   );
 };
+
+export default useUserProgressContext;
