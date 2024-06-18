@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Button = ({ children, textOnly, className, ...props }) => {
+export const Button = ({ children, textOnly=false, className, ...props }) => {
   let cssClasses = textOnly ? "text-button" : "button";
   cssClasses += " " + className;
 
