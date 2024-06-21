@@ -14,6 +14,23 @@ body {
   min-height: 100vh;
 }
 
+.center {
+  text-align: center;
+}
+
+.error {
+  width: 350px;
+  height: fit-content;
+  margin: auto;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: rgb(240, 166, 166);
+  color: rgb(110, 8, 8);
+}
+.error h2, .error p {
+  margin: 0;
+}
+
 #main-header {
   display: flex;
   justify-content: space-between;
